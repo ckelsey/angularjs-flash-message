@@ -1,0 +1,22 @@
+{
+  "name": "ckc-angularjs-flash-message",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ckelsey/angularjs-flash-message",
+  "authors": [
+    "ckelsey <chris@fordela.com>"
+  ],
+  "description": "An Angularjs module for flash messages",
+  "main": "dist/flash-message.min.js",
+  "keywords": [
+    "Angularjs",
+    "notifications"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

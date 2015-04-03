@@ -1,0 +1,45 @@
+{
+  "name": "ckc-angularjs-flash-message",
+  "version": "1.0.0",
+  "description": "An Angularjs module for flash messages",
+  "main": "dist/flash-message.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckelsey/angularjs-flash-message"
+  },
+  "keywords": [
+    "Angularjs",
+    "Notifications"
+  ],
+  "author": "Chris Kelsey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckelsey/angularjs-flash-message/issues"
+  },
+  "homepage": "https://github.com/ckelsey/angularjs-flash-message/blob/master/README.md",
+  "dependencies": {
+    "bower": "^*",
+    "gulp": "^*",
+    "gulp-apidoc": "^*",
+    "gulp-minify-css": "^*",
+    "gulp-ngdocs": "^*",
+    "gulp-uglify": "^*",
+    "gulp-usemin": "^*",
+    "gulp-ng-html2js":"^*",
+    "gulp-minify-html":"^*",
+    "through2":"^*",
+    "gulp-util":"^*",
+    "minimize":"^*",
+  	"gulp-sourcemaps":"^*",
+  	"gulp-ng-annotate":"^*",
+  	"gulp-compass":"^*",
+  	"vinyl-fs":"^*",
+  	"gulp-uglifyjs":"^*",
+  	"gulp-concat":"^*",
+  	"gulp-notify":"^*",
+  	"gulp-livereload":"^*",
+  	"gulp-plumber":"^*",
+  	"gulp-concat-sourcemap":"^*"
+  }
+}
