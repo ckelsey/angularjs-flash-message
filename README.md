@@ -57,7 +57,7 @@ angular.module('st4rtApp',[
 * ___.close()___ - Closes the flash message.
 
 ##Use
-* ___Bower___ - ckc-angular-flash-message
+* ___Bower___ - ckc-angularjs-flash-message
 * Add "flash_message" to your app's dependencies
 * Add "flash_message.js" and "flash_message.css" to you scripts/css
 
