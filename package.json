@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckelsey/angularjs-flash-message"
+    "url": "https://github.com/ckelsey/ckc-angularjs-flash-message"
   },
   "keywords": [
     "Angularjs",
@@ -15,9 +15,9 @@
   "author": "Chris Kelsey",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ckelsey/angularjs-flash-message/issues"
+    "url": "https://github.com/ckelsey/ckc-angularjs-flash-message/issues"
   },
-  "homepage": "https://github.com/ckelsey/angularjs-flash-message/blob/master/README.md",
+  "homepage": "https://github.com/ckelsey/ckc-angularjs-flash-message/blob/master/README.md",
   "dependencies": {
     "bower": "^*",
     "gulp": "^*",

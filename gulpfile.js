@@ -66,18 +66,11 @@ var scriptsToDo1 = [
 ];
 
 gulp.task('scripts1', function() {
+	require('fs').writeFile('dist/builddate.js', 'console.log("'+new Date()+'")');
 	return gulp.src(scriptsToDo1)
 	.pipe(plumber(plumberErrorHandler))
 	.pipe(uglify('flash-message.min.js', {outSourceMap: true}))
 	.pipe(gulp.dest('dist'))
-});
-
-gulp.task('scripts2', function() {
-	require('fs').writeFile('dist/builddate.js', 'console.log("'+new Date()+'")');
-	return gulp.src(scriptsToDo2)
-	.pipe(plumber(plumberErrorHandler))
-	.pipe(uglify('app.min.js', {outSourceMap: true}))
-	.pipe(gulp.dest('dist/js'))
 });
 
 gulp.task('live', function() {
