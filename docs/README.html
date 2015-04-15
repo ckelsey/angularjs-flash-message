@@ -1,0 +1,63 @@
+<h1 id="angularjs-flash-message">angularjs-flash-message</h1>
+<p>An Angularjs module for flash messages</p>
+<h3 id="example">Example</h3>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html">&lt;form&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Class (&quot;.active&quot; makes it appear)&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; ng-model=&quot;fm.class&quot; type=&quot;text&quot; style=&quot;display:block;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Content&lt;/label&gt;
+        &lt;textarea class=&quot;form-control&quot; ng-model=&quot;fm.content&quot; style=&quot;display:block;&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Button 1 text&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; ng-model=&quot;fm.button_1_text&quot; type=&quot;text&quot; style=&quot;display:block;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Button 1 class&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; ng-model=&quot;fm.button_1_class&quot; type=&quot;text&quot; style=&quot;display:block;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Button 2 text&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; ng-model=&quot;fm.button_2_text&quot; type=&quot;text&quot; style=&quot;display:block;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Button 2 class&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; ng-model=&quot;fm.button_2_class&quot; type=&quot;text&quot; style=&quot;display:block;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;label style=&quot;display:block;&quot;&gt;(There is also button_1_click and button_2_click, but for security, nope, not going to happen)&lt;/label&gt;
+    &lt;br /&gt;
+    &lt;button class=&quot;btn btn-primary&quot; ng-click=&quot;flash_message.set(fm)&quot;&gt;Try it&lt;/button&gt;
+&lt;/form&gt;
+&lt;flash-message&gt;&lt;/flash-message&gt;
+</code></pre>
+<h4 id="javascript">Javascript</h4>
+<pre><code class="lang-javascript">angular.module(&#39;st4rtApp&#39;,[
+    &#39;flashmessage&#39;
+]);
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong><em>class</em></strong> - A class to add to the message container. &quot;active&quot; is what activates the message.</li>
+<li><strong><em>content</em></strong> - The text/html content of the message.</li>
+<li><strong><em>button_1_text</em></strong> - The text of the first button. Default &quot;Ok&quot;.</li>
+<li><strong><em>button_1_click</em></strong> - The function for the first button. Default &quot;function(){object.close();}&quot;.</li>
+<li><strong><em>button_1_class</em></strong> - The class for the first button. Default &quot;&quot;.</li>
+<li><strong><em>button_2_text</em></strong> - The text of the second button. Default &quot;Cancel&quot;.</li>
+<li><strong><em>button_2_click</em></strong> - The function for the second button. Default &quot;function(){object.close();}&quot;.</li>
+<li><strong><em>button_2_class</em></strong> - The class for the second button. Default &quot;hidden&quot;.</li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><strong><em>.set(data)</em></strong> - &quot;data&quot; is the options above.</li>
+<li><strong><em>.close()</em></strong> - Closes the flash message.</li>
+</ul>
+<h3 id="use">Use</h3>
+<ul>
+<li><strong><em>Bower</em></strong> - ckc-angularjs-flash-message</li>
+<li>Add &quot;flash_message&quot; to your app&#39;s dependencies</li>
+<li>Add &quot;flash_message&quot; to your app&#39;s controller dependencies</li>
+<li>Add &quot;flash_message.js&quot; and &quot;flash_message.css&quot; to your scripts/css</li>
+</ul>

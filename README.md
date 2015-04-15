@@ -1,7 +1,7 @@
 # angularjs-flash-message
 An Angularjs module for flash messages
 
-##Example
+###Example
 ####HTML
 ```html
 <form>
@@ -42,9 +42,9 @@ angular.module('st4rtApp',[
 ]);
 ```
 
-##Options
+###Options
 * ___class___ - A class to add to the message container. "active" is what activates the message.
-* ___content___ - The text content of the message. In the near future, html will be supported.
+* ___content___ - The text/html content of the message.
 * ___button_1_text___ - The text of the first button. Default "Ok".
 * ___button_1_click___ - The function for the first button. Default "function(){object.close();}".
 * ___button_1_class___ - The class for the first button. Default "".
@@ -52,14 +52,12 @@ angular.module('st4rtApp',[
 * ___button_2_click___ - The function for the second button. Default "function(){object.close();}".
 * ___button_2_class___ - The class for the second button. Default "hidden".
 
-##Methods
+###Methods
 * ___.set(data)___ - "data" is the options above.
 * ___.close()___ - Closes the flash message.
 
-##Use
+###Use
 * ___Bower___ - ckc-angularjs-flash-message
 * Add "flash_message" to your app's dependencies
-* Add "flash_message.js" and "flash_message.css" to you scripts/css
-
-##Todo
-* Add the ability to have html in the content option
+* Add "flash_message" to your app's controller dependencies
+* Add "flash_message.js" and "flash_message.css" to your scripts/css

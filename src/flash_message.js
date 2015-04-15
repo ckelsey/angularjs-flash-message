@@ -17,7 +17,7 @@ angular.module('flashmessage',[])
 	for(var p in defaults){
 		object.message[p] = defaults[p];
 	}
-	
+
 	var t = null;
 	var triedApply = 0;
 
@@ -44,12 +44,10 @@ angular.module('flashmessage',[])
 				object.message[p] = data[p];
 			}
 		}
-		console.log(object);
 		return runApply();
 	};
 
 	object.close = function(){
-		console.log(defaults)
 		return object.set(defaults);
 	};
 
@@ -64,7 +62,7 @@ angular.module('flashmessage',[])
 		}],
 		template:'<div id="flash-message" class="{{flash_message.message.class}}">'+
 			'<div id="flash-message-outer"><div id="flash-message-inner"><div id="flash-message-section">'+
-				'<div id="flash-message-content" ng-bind="flash_message.message.content"></div>'+
+				'<div id="flash-message-content" ng-bind-html="flash_message.message.content"></div>'+
 				'<div id="flash-message-buttons">'+
 					'<button flash-message-button-1 id="flash-message-button-1" ng-click="flash_message.message.button_1_click()" class="{{flash_message.message.button_1_class}}" ng-bind-html="flash_message.message.button_1_text">Ok</button>'+
 					'<button flash-message-button-2 id="flash-message-button-2" ng-click="flash_message.message.button_2_click()" class="{{flash_message.message.button_2_class}}" ng-bind-html="flash_message.message.button_2_text">Cancel</button>'+
@@ -74,4 +72,4 @@ angular.module('flashmessage',[])
 		link:function(scope,elm,attr){}
 	};
 })
-; 
+;
